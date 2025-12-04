@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Hồ sơ cá nhân"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:columnCount="2"
+        android:rowCount="5">
+
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Tên đăng nhập"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="trung1" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Họ tên"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Nguyễn Hữu Trung" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Email"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="trung2@gmail.com" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Giới tính"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Male" />
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:text="ĐĂNG XUẤT" />
+
+</LinearLayout>
